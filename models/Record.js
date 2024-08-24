@@ -27,7 +27,7 @@ const s = new Schema({
     default: "Bilinmiyor"
   },
   operationType: String,
-  price: Number
+  price: String
 }, {
   timestamps: true
 });
