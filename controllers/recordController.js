@@ -4,7 +4,7 @@ const R = require('../models/Record');
 
 r.get("/", async (req, res) => {
   try {
-    const data = await R.find();
+    const data = await R.find().sort({ createdAt: -1 });
     return res.status(200).json(data);
   } catch (err) {
     throw new Error(err.message);
