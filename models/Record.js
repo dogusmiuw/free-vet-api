@@ -26,8 +26,14 @@ const s = new Schema({
     type: String,
     default: "Bilinmiyor"
   },
-  operationType: String,
-  price: String
+  operationType: {
+    type: String,
+    default: "Bilinmiyor"
+  },
+  price: {
+    type: String,
+    default: "Bilinmiyor"
+  },
 }, {
   timestamps: true
 });
